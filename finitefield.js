@@ -1,4 +1,4 @@
-function Finitefield(prime) {
+module.exports = function Finitefield(prime) {
     this.prime = prime;
     this.neg = function(x) {
         return (Math.floor(x/this.prime) + 1) * this.prime - x;
